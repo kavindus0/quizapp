@@ -10,6 +10,11 @@ const nextConfig: NextConfig = {
     // Disable TypeScript checking during builds
     ignoreBuildErrors: true,
   },
+  output: 'standalone',
+  trailingSlash: false,
+  generateBuildId: async () => {
+    return 'quiz-app-build'
+  }
 };
 
 export default nextConfig;
