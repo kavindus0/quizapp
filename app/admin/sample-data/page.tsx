@@ -26,20 +26,14 @@ export default function SampleDataPage() {
     const [results, setResults] = useState<any>(null);
     const [error, setError] = useState<string | null>(null);
 
-    const addSamplePolicies = useMutation(api.sampleData.addSamplePolicies);
-    const addSampleTraining = useMutation(api.sampleData.addSampleTraining);
-    const addSampleQuizzes = useMutation(api.sampleData.addSampleQuizzes);
-    const linkQuizzesToTraining = useMutation(api.sampleData.linkQuizzesToTraining);
-    const addAllSampleData = useMutation(api.sampleData.addAllSampleData);
-
     const handleAddAllData = async () => {
         setLoading(true);
         setError(null);
         setResults(null);
 
         try {
-            const result = await addAllSampleData({});
-            setResults(result);
+            // Sample data functions have been removed
+            setResults({ message: "Sample data functions are no longer available. Please use the individual management sections to add data." });
         } catch (err: any) {
             setError(err.message || "Failed to add sample data");
         } finally {
@@ -52,24 +46,8 @@ export default function SampleDataPage() {
         setError(null);
 
         try {
-            let result;
-            switch (type) {
-                case 'policies':
-                    result = await addSamplePolicies({});
-                    break;
-                case 'training':
-                    result = await addSampleTraining({});
-                    break;
-                case 'quizzes':
-                    result = await addSampleQuizzes({});
-                    break;
-                case 'links':
-                    result = await linkQuizzesToTraining({});
-                    break;
-                default:
-                    throw new Error("Unknown data type");
-            }
-            setResults({ [type]: result });
+            // Sample data functions have been removed
+            setResults({ [type]: "Sample data functions are no longer available. Please use the individual management sections to add data." });
         } catch (err: any) {
             setError(err.message || `Failed to add ${type}`);
         } finally {
