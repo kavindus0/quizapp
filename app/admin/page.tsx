@@ -85,7 +85,7 @@ const AdminDashboard: React.FC = () => {
 
     // Get role badge color - updated for both UserRole enum and string values
     const getRoleBadgeVariant = (role: UserRole | string) => {
-        const roleStr = typeof role === 'string' ? role : role.toString();
+        const roleStr = typeof role === 'string' ? role : role;
         switch (roleStr) {
             case 'admin':
             case UserRole.ADMIN:
