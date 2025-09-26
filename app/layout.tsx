@@ -12,9 +12,15 @@ import {
 } from "@clerk/nextjs";
 import { ConvexProviderWithClerk } from "convex/react-clerk";
 import { ConvexReactClient } from "convex/react";
-
-const convex = new ConvexReactClient(process.env.NEXT_PUBLIC_CONVEX_URL!);
 import Link from "next/link";
+
+// Safe Convex client initialization
+const getConvexClient = () => {
+  const url = process.env.NEXT_PUBLIC_CONVEX_URL || "https://wry-goldfinch-589.convex.cloud";
+  return new ConvexReactClient(url);
+};
+
+const convex = getConvexClient();
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { UserSync } from "@/components/UserSync";

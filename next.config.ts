@@ -10,11 +10,9 @@ const nextConfig: NextConfig = {
     // Disable TypeScript checking during builds
     ignoreBuildErrors: true,
   },
-  output: 'standalone',
-  trailingSlash: false,
-  generateBuildId: async () => {
-    return 'quiz-app-build'
-  }
+  env: {
+    NEXT_PUBLIC_CONVEX_URL: "https://wry-goldfinch-589.convex.cloud",
+  },
 };
 
 export default nextConfig;
