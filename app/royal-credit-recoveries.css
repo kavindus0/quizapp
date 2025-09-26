@@ -1,0 +1,372 @@
+/* Royal Credit Recoveries Brand Variables */
+:root {
+    /* Brand Colors - Royal Credit Recoveries Professional Palette */
+    --rcr-primary: 218 100% 25%;
+    /* Deep Royal Blue */
+    --rcr-primary-light: 218 100% 35%;
+    /* Lighter Royal Blue */
+    --rcr-primary-dark: 218 100% 15%;
+    /* Darker Royal Blue */
+
+    --rcr-secondary: 45 100% 45%;
+    /* Gold/Amber */
+    --rcr-secondary-light: 45 100% 55%;
+    --rcr-secondary-dark: 45 100% 35%;
+
+    --rcr-accent: 195 100% 30%;
+    /* Trustworthy Teal */
+    --rcr-accent-light: 195 100% 40%;
+    --rcr-accent-dark: 195 100% 20%;
+
+    --rcr-success: 142 76% 36%;
+    /* Professional Green */
+    --rcr-warning: 38 92% 50%;
+    /* Alert Orange */
+    --rcr-danger: 0 84% 60%;
+    /* Security Red */
+
+    --rcr-neutral-50: 220 14% 96%;
+    --rcr-neutral-100: 220 14% 93%;
+    --rcr-neutral-200: 220 13% 91%;
+    --rcr-neutral-300: 220 9% 82%;
+    --rcr-neutral-400: 220 9% 69%;
+    --rcr-neutral-500: 220 9% 46%;
+    --rcr-neutral-600: 220 12% 37%;
+    --rcr-neutral-700: 220 17% 26%;
+    --rcr-neutral-800: 220 23% 18%;
+    --rcr-neutral-900: 220 39% 11%;
+
+    /* Update theme colors to use Royal Credit Recoveries branding */
+    --primary: hsl(var(--rcr-primary));
+    --primary-foreground: hsl(var(--rcr-neutral-50));
+    --secondary: hsl(var(--rcr-secondary));
+    --secondary-foreground: hsl(var(--rcr-neutral-900));
+    --accent: hsl(var(--rcr-accent));
+    --accent-foreground: hsl(var(--rcr-neutral-50));
+    --muted: hsl(var(--rcr-neutral-100));
+    --muted-foreground: hsl(var(--rcr-neutral-500));
+    --card: hsl(var(--rcr-neutral-50));
+    --card-foreground: hsl(var(--rcr-neutral-900));
+    --border: hsl(var(--rcr-neutral-200));
+    --input: hsl(var(--rcr-neutral-200));
+}
+
+.dark {
+    /* Dark mode adaptations for Royal Credit Recoveries */
+    --primary: hsl(var(--rcr-primary-light));
+    --primary-foreground: hsl(var(--rcr-neutral-50));
+    --secondary: hsl(var(--rcr-secondary-light));
+    --secondary-foreground: hsl(var(--rcr-neutral-900));
+    --accent: hsl(var(--rcr-accent-light));
+    --accent-foreground: hsl(var(--rcr-neutral-50));
+    --muted: hsl(var(--rcr-neutral-800));
+    --muted-foreground: hsl(var(--rcr-neutral-400));
+    --card: hsl(var(--rcr-neutral-900));
+    --card-foreground: hsl(var(--rcr-neutral-100));
+    --border: hsl(var(--rcr-neutral-700));
+    --input: hsl(var(--rcr-neutral-700));
+}
+
+/* Royal Credit Recoveries Brand Components */
+.rcr-header {
+    background: linear-gradient(135deg, hsl(var(--rcr-primary)) 0%, hsl(var(--rcr-primary-dark)) 100%);
+    color: white;
+    border-bottom: 3px solid hsl(var(--rcr-secondary));
+}
+
+.rcr-logo {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.rcr-tagline {
+    color: hsl(var(--rcr-neutral-200));
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+}
+
+.rcr-nav-link {
+    color: hsl(var(--rcr-neutral-200));
+    transition: all 0.2s ease;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+}
+
+.rcr-nav-link:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.rcr-nav-link.active {
+    color: hsl(var(--rcr-secondary));
+    background-color: rgba(255, 255, 255, 0.1);
+    font-weight: 600;
+}
+
+.rcr-card {
+    background: white;
+    border: 1px solid hsl(var(--rcr-neutral-200));
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    transition: all 0.2s ease;
+}
+
+.rcr-card:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border-color: hsl(var(--rcr-primary) / 0.2);
+}
+
+.rcr-button-primary {
+    background: linear-gradient(135deg, hsl(var(--rcr-primary)) 0%, hsl(var(--rcr-primary-dark)) 100%);
+    color: white;
+    border: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.rcr-button-primary:hover {
+    background: linear-gradient(135deg, hsl(var(--rcr-primary-light)) 0%, hsl(var(--rcr-primary)) 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rcr-button-secondary {
+    background: hsl(var(--rcr-secondary));
+    color: hsl(var(--rcr-neutral-900));
+    border: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.rcr-button-secondary:hover {
+    background: hsl(var(--rcr-secondary-light));
+    transform: translateY(-1px);
+}
+
+.rcr-badge-security {
+    background: hsl(var(--rcr-danger) / 0.1);
+    color: hsl(var(--rcr-danger));
+    border: 1px solid hsl(var(--rcr-danger) / 0.2);
+}
+
+.rcr-badge-compliance {
+    background: hsl(var(--rcr-success) / 0.1);
+    color: hsl(var(--rcr-success));
+    border: 1px solid hsl(var(--rcr-success) / 0.2);
+}
+
+.rcr-badge-training {
+    background: hsl(var(--rcr-accent) / 0.1);
+    color: hsl(var(--rcr-accent));
+    border: 1px solid hsl(var(--rcr-accent) / 0.2);
+}
+
+.rcr-badge-warning {
+    background: hsl(var(--rcr-warning) / 0.1);
+    color: hsl(var(--rcr-warning));
+    border: 1px solid hsl(var(--rcr-warning) / 0.2);
+}
+
+.rcr-progress-bar {
+    background-color: hsl(var(--rcr-neutral-200));
+    border-radius: 9999px;
+    overflow: hidden;
+}
+
+.rcr-progress-fill {
+    background: linear-gradient(90deg, hsl(var(--rcr-primary)) 0%, hsl(var(--rcr-accent)) 100%);
+    transition: width 0.3s ease;
+}
+
+.rcr-alert-success {
+    background: hsl(var(--rcr-success) / 0.1);
+    border: 1px solid hsl(var(--rcr-success) / 0.2);
+    color: hsl(var(--rcr-success));
+}
+
+.rcr-alert-warning {
+    background: hsl(var(--rcr-warning) / 0.1);
+    border: 1px solid hsl(var(--rcr-warning) / 0.2);
+    color: hsl(var(--rcr-warning));
+}
+
+.rcr-alert-danger {
+    background: hsl(var(--rcr-danger) / 0.1);
+    border: 1px solid hsl(var(--rcr-danger) / 0.2);
+    color: hsl(var(--rcr-danger));
+}
+
+.rcr-section-header {
+    color: hsl(var(--rcr-primary));
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    border-bottom: 2px solid hsl(var(--rcr-secondary));
+    padding-bottom: 0.5rem;
+}
+
+/* Royal Credit Recoveries Dashboard Enhancements */
+.rcr-dashboard-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid hsl(var(--rcr-primary));
+    transition: all 0.2s ease;
+}
+
+.rcr-dashboard-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.rcr-stat-card {
+    background: linear-gradient(135deg, hsl(var(--rcr-primary)) 0%, hsl(var(--rcr-accent)) 100%);
+    color: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rcr-footer {
+    background: hsl(var(--rcr-neutral-800));
+    color: hsl(var(--rcr-neutral-300));
+    border-top: 3px solid hsl(var(--rcr-secondary));
+}
+
+/* Royal Credit Recoveries Typography */
+.rcr-heading-primary {
+    color: hsl(var(--rcr-primary));
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+}
+
+.rcr-heading-secondary {
+    color: hsl(var(--rcr-neutral-700));
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.rcr-text-muted {
+    color: hsl(var(--rcr-neutral-500));
+}
+
+.rcr-text-emphasis {
+    color: hsl(var(--rcr-primary));
+    font-weight: 600;
+}
+
+/* Animations for Royal Credit Recoveries branding */
+@keyframes rcr-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes rcr-slide-in {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes rcr-pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+}
+
+.rcr-animate-fade-in {
+    animation: rcr-fade-in 0.6s ease-out;
+}
+
+.rcr-animate-slide-in {
+    animation: rcr-slide-in 0.4s ease-out;
+}
+
+.rcr-animate-pulse {
+    animation: rcr-pulse 2s infinite;
+}
+
+/* Royal Credit Recoveries responsive design */
+@media (max-width: 768px) {
+    .rcr-header {
+        padding: 1rem;
+    }
+
+    .rcr-logo {
+        font-size: 1.25rem;
+    }
+
+    .rcr-tagline {
+        display: none;
+    }
+}
+
+/* Royal Credit Recoveries focus states for accessibility */
+.rcr-focus-ring:focus {
+    outline: 2px solid hsl(var(--rcr-secondary));
+    outline-offset: 2px;
+}
+
+/* Royal Credit Recoveries loading states */
+.rcr-loading {
+    background: linear-gradient(90deg,
+            hsl(var(--rcr-neutral-200)) 25%,
+            hsl(var(--rcr-neutral-100)) 50%,
+            hsl(var(--rcr-neutral-200)) 75%);
+    background-size: 200% 100%;
+    animation: rcr-loading 1.5s infinite;
+}
+
+@keyframes rcr-loading {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Royal Credit Recoveries custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: hsl(var(--rcr-neutral-100));
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsl(var(--rcr-primary) / 0.6);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--rcr-primary));
+}
