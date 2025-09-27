@@ -9,7 +9,7 @@ export default function Home() {
         <div className="text-center max-w-4xl mx-auto">
           <div className="mb-8">
             <h1 className="rcr-heading-primary text-5xl md:text-6xl mb-6 rcr-animate-fade-in">
-              Royal Credit Recoveries
+              SecureAware
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto mb-6"></div>
             <p className="text-2xl md:text-3xl font-light text-gray-700 mb-4 rcr-animate-fade-in">
