@@ -57,7 +57,7 @@ export default function RootLayout({
               <div className="container mx-auto px-4 py-4 flex justify-between items-center">
                 <div className="flex items-center space-x-6">
                   <Link href="/" className="rcr-logo text-2xl">
-                    Royal Credit Recoveries
+                    SecureAware
                   </Link>
                   <div className="rcr-tagline hidden sm:block">
                     Security Awareness Platform
