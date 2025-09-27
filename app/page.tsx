@@ -8,9 +8,16 @@ export default function Home() {
       <div className="container mx-auto px-4 py-16">
         <div className="text-center max-w-4xl mx-auto">
           <div className="mb-8">
-            <h1 className="rcr-heading-primary text-5xl md:text-6xl mb-6 rcr-animate-fade-in">
-              Royal Credit Recoveries
-            </h1>
+            <div className="flex items-center justify-center mb-8">
+              <img
+                src="/secureaware-logo.png"
+                alt="SecureAware Logo"
+                className="h-16 w-16 md:h-20 md:w-20 mr-4 object-contain"
+              />
+              <h1 className="rcr-heading-primary text-5xl md:text-6xl rcr-animate-fade-in">
+                Secure<span className="text-yellow-600">Aware</span>
+              </h1>
+            </div>
             <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto mb-6"></div>
             <p className="text-2xl md:text-3xl font-light text-gray-700 mb-4 rcr-animate-fade-in">
               Security Awareness Platform

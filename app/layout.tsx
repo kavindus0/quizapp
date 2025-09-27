@@ -56,12 +56,22 @@ export default function RootLayout({
             <header className="rcr-header shadow-lg">
               <div className="container mx-auto px-4 py-4 flex justify-between items-center">
                 <div className="flex items-center space-x-6">
-                  <Link href="/" className="rcr-logo text-2xl">
-                    Royal Credit Recoveries
+
+                  <Link href="/" className="rcr-logo flex items-center space-x-3 hover:opacity-90 transition-opacity">
+                    <img
+                      src="/secureaware-logo.png"
+                      alt="SecureAware Logo"
+                      className="h-10 w-10 md:h-12 md:w-12 object-contain"
+                    />
+                    <div className="flex flex-col">
+                      <span className="text-xl md:text-2xl font-bold text-gray-900">
+                        Secure<span className="text-yellow-600">Aware</span>
+                      </span>
+                      <span className="text-xs text-gray-600 hidden sm:block leading-tight">
+                        Security Awareness Platform
+                      </span>
+                    </div>
                   </Link>
-                  <div className="rcr-tagline hidden sm:block">
-                    Security Awareness Platform
-                  </div>
 
                   <SignedIn>
                     <nav className="hidden md:flex items-center space-x-4">
